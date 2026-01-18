@@ -16,7 +16,6 @@
     },
     /* ÍNICIO das configurações principais */
     "editor.fontFamily": "Cascadia code", // Fonte do editor de código
-    "editor.fontLigatures": true, // Sinal apresentados de forma diferente. Ex: 8 != 0; =>
     "explorer.compactFolders": false, // Não mostrar o caminho das pastas de forma compactada. Ex: database\dbcode\code.sql
     "editor.minimap.enabled": true, // Retirar o mini mapa do editor de código
     "editor.wordWrap": "on", // Quebrar palavras para baixo,
@@ -40,11 +39,13 @@
     "*.db3": "${capture}.${extname}-*",
     "*.sdb": "${capture}.${extname}-*",
     "*.s3db": "${capture}.${extname}-*"
-  },
-  */
+    },
+    
     // Renomear a abertura e fechamento da tag
     "javascript.preferences.renameMatchingJsxTags": true,
     "typescript.preferences.renameMatchingJsxTags": true,
+    */
+    
     "editor.scrollbar.vertical": "hidden",
     "workbench.statusBar.visible": false,
     "editor.linkedEditing": true,
