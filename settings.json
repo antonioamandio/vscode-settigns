@@ -47,7 +47,7 @@
   "window.menuBarVisibility": "toggle",
 
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Formatador padrão
   "workbench.editorAssociations": {
     "*.sqlite": "default"
   },
