@@ -25,36 +25,41 @@
     "*.sqlite3": "${capture}.${extname}-*",
     "*.db3": "${capture}.${extname}-*",
     "*.sdb": "${capture}.${extname}-*",
-    "*.s3db": "${capture}.${extname}-*"
+    "*.s3db": "${capture}.${extname}-*",
   },
 
   // Renomear a abertura e fechamento da tag
   "javascript.preferences.renameMatchingJsxTags": true,
   "typescript.preferences.renameMatchingJsxTags": true,
-  "workbench.iconTheme": "monospace-icons",
 
+  "workbench.iconTheme": "material-icon-theme",
   "editor.scrollbar.vertical": "hidden",
   "workbench.statusBar.visible": false,
   "editor.linkedEditing": true,
   "editor.stickyScroll.enabled": false,
-  "liveServer.settings.donotShowInfoMsg": true,
   "window.zoomLevel": 1,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "debug.disassemblyView.showSourceCode": false,
-  "symbols.hidesExplorerArrows": false,
-  "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "window.menuBarVisibility": "toggle",
 
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode", // Formatador padrão
   "workbench.editorAssociations": {
-    "*.sqlite": "default"
+    "*.sqlite": "default",
   },
+
+  // Configurações do Prettier para o JS
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+
   "workbench.activityBar.location": "top",
   "workbench.colorCustomizations": {},
-  "workbench.colorTheme": "Monospace Dark"
+  "workbench.colorTheme": "Monospace Dark",
+  "chat.commandCenter.enabled": false,
+  "workbench.navigationControl.enabled": false,
+  "window.commandCenter": false,
 
   // Configuração para o Linux
-  // ,"terminal.integrated.defaultProfile.linux": "bash" // Configuração para o terminal do vscode ser o bash
+  // ,"terminal.integrated.defaultrofile.linux": "bash" // Configuração para o terminal do vscode ser o bash
 }
