@@ -1,65 +1,64 @@
 {
-  /* ÍNICIO das configurações principais */
+    /* ÍNICIO das configurações principais */
+    "editor.fontFamily": "Cascadia code", // Fonte do editor de código
+    "editor.fontLigatures": false, // Sinal apresentados de forma diferente. Ex: 8 != 0; =>
+    "explorer.compactFolders": false, // Retirar o mini mapa do editor de código
+    "editor.wordWrap": "on", // Quebrar palavras para baixo,
+    "explorer.fileNesting.enabled": false, // Habilitar o padrão de agrupamento de arquivos. Ex: package.json/package-lock.json
+    // Configuração do padrão de agrupamento de arquivos.
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "eslint*, .eslint*, vite, prettier*, tsconfig*, package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "tailwind.config*": "tailwind.config*, postcss.config*",
+        ".env.local": ".env*",
+        ".env": ".env*",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*",
+    },
+    // Renomear a abertura e fechamento da tag
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.scrollbar.vertical": "hidden",
+    "workbench.statusBar.visible": false,
+    "editor.linkedEditing": true,
+    "editor.stickyScroll.enabled": false,
+    "window.zoomLevel": 1,
+    "debug.disassemblyView.showSourceCode": false,
+    "editor.formatOnSave": true,
+    "workbench.editorAssociations": {
+        "*.sqlite": "default",
+    },
+    "workbench.activityBar.location": "top",
+    "workbench.secondarySideBar.defaultVisibility": "visible",
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    // 42 Settings
+    "42header.email": "marvin@42.fr",
+    "42header.username": "aamandio",
+    // "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "window.menuBarVisibility": "toggle",
+    "workbench.layoutControl.enabled": false,
+    "workbench.navigationControl.enabled": false,
+    "window.commandCenter": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "workbench.colorTheme": "Monospace Dark",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  "editor.fontFamily": "Cascadia code", // Fonte do editor de código
-  "editor.fontLigatures": true, // Sinal apresentados de forma diferente. Ex: 8 != 0; =>
-  "explorer.compactFolders": false, // Não mostrar o caminho das pastas de forma compactada. Ex: database\dbcode\code.sql
-  "editor.minimap.enabled": true, // Retirar o mini mapa do editor de código
-  "editor.wordWrap": "on", // Quebrar palavras para baixo,
+    // Configurações do Prettier para o JS
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
 
-  "explorer.fileNesting.enabled": true, // Habilitar o padrão de agrupamento de arquivos. Ex: package.json/package-lock.json
-
-  // Configuração do padrão de agrupamento de arquivos.
-  "explorer.fileNesting.patterns": {
-    "*.ts": "${capture}.js",
-    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
-    "*.jsx": "${capture}.js",
-    "*.tsx": "${capture}.ts",
-    "tsconfig.json": "tsconfig.*.json",
-    "package.json": "eslint*, .eslint*, vite, prettier*, tsconfig*, package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
-    "tailwind.config*": "tailwind.config*, postcss.config*",
-    ".env.local": ".env*",
-    ".env": ".env*",
-    "*.sqlite": "${capture}.${extname}-*",
-    "*.db": "${capture}.${extname}-*",
-    "*.sqlite3": "${capture}.${extname}-*",
-    "*.db3": "${capture}.${extname}-*",
-    "*.sdb": "${capture}.${extname}-*",
-    "*.s3db": "${capture}.${extname}-*",
-  },
-
-  // Renomear a abertura e fechamento da tag
-  "javascript.preferences.renameMatchingJsxTags": true,
-  "typescript.preferences.renameMatchingJsxTags": true,
-
-  "workbench.iconTheme": "material-icon-theme",
-  "editor.scrollbar.vertical": "hidden",
-  "workbench.statusBar.visible": false,
-  "editor.linkedEditing": true,
-  "editor.stickyScroll.enabled": false,
-  "window.zoomLevel": 1,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "debug.disassemblyView.showSourceCode": false,
-  "workbench.layoutControl.enabled": false,
-  "window.menuBarVisibility": "toggle",
-
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // Formatador padrão
-  "workbench.editorAssociations": {
-    "*.sqlite": "default",
-  },
-
-  // Configurações do Prettier para o JS
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-
-  "workbench.activityBar.location": "top",
-  "workbench.colorCustomizations": {},
-  "workbench.colorTheme": "Monospace Dark",
-  "chat.commandCenter.enabled": false,
-  "workbench.navigationControl.enabled": false,
-  "window.commandCenter": false,
-
-  // Configuração para o Linux
-  // ,"terminal.integrated.defaultrofile.linux": "bash" // Configuração para o terminal do vscode ser o bash
+    // Configuração do terminal padrão
+    "terminal.integrated.defaultProfile.linux": "bash",
 }
