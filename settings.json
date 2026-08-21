@@ -5,6 +5,7 @@
     "explorer.compactFolders": false, // Retirar o mini mapa do editor de código
     "editor.wordWrap": "on", // Quebrar palavras para baixo,
     "explorer.fileNesting.enabled": false, // Habilitar o padrão de agrupamento de arquivos. Ex: package.json/package-lock.json
+    "explorer.confirmDelete": true,
     // Configuração do padrão de agrupamento de arquivos.
     "explorer.fileNesting.patterns": {
         "*.ts": "${capture}.js",
