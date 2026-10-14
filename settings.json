@@ -1,11 +1,14 @@
 {
     /* ÍNICIO das configurações principais */
-    "editor.fontFamily": "Cascadia code", // Fonte do editor de código
-    "editor.fontLigatures": false, // Sinal apresentados de forma diferente. Ex: 8 != 0; =>
+
+    // Configuração de fonte do editor de código
+    "editor.fontSize": 16,
+    "editor.lineHeight": 22,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true, // Sinal apresentados de forma diferente. Ex: 8 != 0; =>
     "explorer.compactFolders": false, // Retirar o mini mapa do editor de código
     "editor.wordWrap": "on", // Quebrar palavras para baixo,
     "explorer.fileNesting.enabled": false, // Habilitar o padrão de agrupamento de arquivos. Ex: package.json/package-lock.json
-    "explorer.confirmDelete": true, // Habilita a confirmação antes de deletar um arquivo
     // Configuração do padrão de agrupamento de arquivos.
     "explorer.fileNesting.patterns": {
         "*.ts": "${capture}.js",
@@ -24,8 +27,6 @@
         "*.sdb": "${capture}.${extname}-*",
         "*.s3db": "${capture}.${extname}-*",
     },
-    // Renomear a abertura e fechamento da tag
-    "workbench.iconTheme": "material-icon-theme",
     "editor.scrollbar.vertical": "hidden",
     "workbench.statusBar.visible": false,
     "editor.linkedEditing": true,
@@ -36,14 +37,13 @@
     "workbench.editorAssociations": {
         "*.sqlite": "default",
     },
-    "workbench.activityBar.location": "top",
     "workbench.secondarySideBar.defaultVisibility": "visible",
     "editor.unicodeHighlight.invisibleCharacters": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
     // 42 Settings
-    "42header.email": "marvin@42.fr",
-    "42header.username": "aamandio",
-    // "editor.tabSize": 4,
+    "42header.email": "",
+    "42header.username": "",
+    //"editor.tabSize": 4,
     "editor.insertSpaces": false,
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
@@ -52,7 +52,6 @@
     "workbench.navigationControl.enabled": false,
     "window.commandCenter": false,
     "diffEditor.hideUnchangedRegions.enabled": true,
-    "workbench.colorTheme": "Monospace Dark",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
 
     // Configurações do Prettier para o JS
@@ -62,4 +61,16 @@
 
     // Configuração do terminal padrão
     "terminal.integrated.defaultProfile.linux": "bash",
+    "workbench.iconTheme": "material-icon-theme",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+    },
+    "terminal.integrated.initialHint": false,
+    "workbench.colorTheme": "Space Dark",
+    "chat.viewSessions.orientation": "stacked",
+    "workbench.activityBar.location": "top",
+    "redhat.telemetry.enabled": false,
 }
