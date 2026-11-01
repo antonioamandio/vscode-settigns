@@ -6,7 +6,7 @@
     "editor.lineHeight": 22,
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontLigatures": true, // Sinal apresentados de forma diferente. Ex: 8 != 0; =>
-    "explorer.compactFolders": false, // Retirar o mini mapa do editor de código
+    "explorer.compactFolders": false, // Habilitar/Desabilitar pastas compactadas
     "editor.wordWrap": "on", // Quebrar palavras para baixo,
     "explorer.fileNesting.enabled": false, // Habilitar o padrão de agrupamento de arquivos. Ex: package.json/package-lock.json
     // Configuração do padrão de agrupamento de arquivos.
